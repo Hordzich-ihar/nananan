@@ -11,13 +11,24 @@
       font-size: 16px;
       padding: 20px;
       height: 100vh;
+      animation: flicker 0.3s infinite;
     }
+
     h2 {
       color: red;
+    }
+
+    @keyframes flicker {
+      0%, 100% { background: black; }
+      50% { background: #111; }
     }
   </style>
 </head>
 <body onclick="location.reload()">
+  <audio autoplay loop>
+    <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+  </audio>
+
   <h2>FATAL ERROR</h2>
   <p>System kernel panic: unexpected token 'undefined' in core module</p>
   <p>Dumping memory...</p>
