@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>FATAL ERROR</title>
+  <style>
+    body {
+      background: black;
+      color: #0f0;
+      font-family: monospace;
+      font-size: 16px;
+      padding: 20px;
+      height: 100vh;
+    }
+    h2 {
+      color: red;
+    }
+  </style>
+</head>
+<body onclick="location.reload()">
+  <h2>FATAL ERROR</h2>
+  <p>System kernel panic: unexpected token 'undefined' in core module</p>
+  <p>Dumping memory...</p>
+  <p>0x00000001: █████████████████████████████████████████████████</p>
+  <p>0x00000002: █████████████████████████████████████████████████</p>
+  <p>Stack trace:</p>
+  <p>at main.js:42:13</p>
+  <p>at initApp (core.js:123:4)</p>
+  <p>at window.onload (index.js:1:1)</p>
+  <p style="margin-top:20px;">Press any key to continue...</p>
+</body>
+</html>
